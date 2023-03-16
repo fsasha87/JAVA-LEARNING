@@ -13,7 +13,7 @@ public class HashMapMain2 {
         states.put(2, "Spain");
         states.put(4, "France");
         states.put(3, "Italy");
-//        System.out.println(states.values());
+        System.out.println(states.values());
         String first = states.get(2);
         System.out.println(first);
         System.out.println(states.get(1));//получили значение по ключу

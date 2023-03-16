@@ -14,6 +14,6 @@ public class PriorityQueueMain {
         prior.offer("A");
         prior.offer("2");
         while (!prior.isEmpty())
-        System.out.println(prior.poll());
+        System.out.println(prior.poll());// 2 A A J V
     }
 }

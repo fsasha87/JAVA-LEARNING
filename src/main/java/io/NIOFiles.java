@@ -20,13 +20,15 @@ public class NIOFiles {
         System.out.println(Files.exists(Paths.get("D:\\Progs\\test")));//
 //        file = Files.move(file, Paths.get("D:\\Progs\\test\\note.txt"), REPLACE_EXISTING);//переместили в другую папку
         file = Files.move(file, Paths.get("D:\\Progs\\test\\note.txt"));//переместили
-        file = Files.copy(file, Paths.get("D:\\Progs\\test\\note2.txt"));//скопировали
+//        file = Files.copy(file, Paths.get("D:\\Progs\\test\\note2.txt"));//скопировали
         System.out.println(Files.exists(Paths.get("D:\\Progs\\note.txt")));
         System.out.println(Files.exists(Paths.get("D:\\Progs\\test\\note.txt")));
         Files.delete(file);//удалили
         System.out.println(Files.exists(Paths.get("D:\\Progs\\test\\note.txt")));
+        Files.delete(dir);
+        System.out.println(Files.exists(Paths.get("D:\\Progs\\test")));
 
-        List<String> lines = Files.readAllLines(Paths.get("D:\\Progs\\Pushkin.txt"), UTF_8);//читаем построчно файл
+        List<String> lines = Files.readAllLines(Paths.get("src/main/resources/Pushkin.txt"), UTF_8);//читаем построчно файл
         for (String item : lines) {
             System.out.println(item);
         }

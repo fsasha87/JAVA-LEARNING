@@ -10,9 +10,7 @@ public class ComparatorMain {
         List<Man> list = new ArrayList<>();
         list.add(new Man(301, "Tom"));
         list.add(new Man(509, "Jack"));
-//        list.add(new Man(847, "Robin"));
-//        list.add(new Man(111, "Peter"));
-        System.out.println(list);
+        System.out.println(list);//[Man{id=301, name=Tom}, Man{id=509, name=Jack}]
 
         //реализация с внешним классом
 //        list.sort(new ManNameComparator());//1й способ с внешним класом
@@ -37,15 +35,12 @@ public class ComparatorMain {
         Collections.sort(list, nameComparator);
         Collections.sort(list, idComparator);
 
-
-
-
         System.out.println(list);//[Man{manId=509, name=Jack}, Man{manId=301, name=Tom}]
 
-//        for (Man m : list) {
-////            System.out.println(m.getName() +" " + m.getId());
-//            System.out.println(m);
-//        }
+        for (Man m : list) {
+//            System.out.println(m.getName() +" " + m.getId());
+            System.out.println(m);
+        }
     }
 }
 

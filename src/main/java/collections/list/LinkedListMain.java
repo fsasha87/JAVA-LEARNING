@@ -11,11 +11,11 @@ public class LinkedListMain {
         states.addLast("Belgium");
         states.addFirst("Spain");
         states.add(1, "Italy");
-        System.out.println(states);
-        System.out.println(states.size());
-        System.out.println(states.get(1));
+        System.out.println(states);//[Spain, Italy, Ukraine, Russia, Belgium]
+        System.out.println(states.size());//5
+        System.out.println(states.get(1));//Italy
         states.set(1, "Portugal");
-        System.out.println(states);
+        System.out.println(states);//[Spain, Portugal, Ukraine, Russia, Belgium]
         for (String state : states) {
             System.out.println(state);
         }
@@ -25,19 +25,18 @@ public class LinkedListMain {
         states.remove("Ukraine");
         states.removeFirst();
         states.removeLast();
-        System.out.println(states);
-
+        System.out.println(states);//[Portugal, Russia]
 
         LinkedList<Person> people = new LinkedList<Person>();
         System.out.println();
         people.add(new Person("Mike"));
         people.addFirst(new Person("Tom"));
         people.addLast(new Person("Nick"));
-        System.out.println(people);
+        System.out.println(people);//[Person{name='Tom'}, Person{name='Mike'}, Person{name='Nick'}]
         people.remove(1);
         System.out.println(people);//без toString [collections.list.Person@1b6d3586, collections.list.Person@4554617c]
         System.out.println(people.getFirst());//Person{name='Tom'}
-        for (Person p : people){System.out.println(p.getName());}//выводим все эл-ты
+        for (Person p : people){System.out.println(p.getName());}//выводим все имена
         Person first = people.getFirst(); System.out.println(first.getName());//получаем первій єл-нт
 
         Person peopleArray [] = people.toArray(new Person[2]);//преобразовали коллекцию в массив объектов и задали его размер
@@ -47,7 +46,7 @@ public class LinkedListMain {
         }
 
         Object peoopleArray2 [] = people.toArray();
-        System.out.println(Arrays.toString(peoopleArray2));
+        System.out.println(Arrays.toString(peoopleArray2));//[Person{name='Tom'}, Person{name='Nick'}]
         for (Object person : peoopleArray2){
             System.out.println(person);
         }

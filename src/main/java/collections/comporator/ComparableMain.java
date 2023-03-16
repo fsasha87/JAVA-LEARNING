@@ -7,8 +7,6 @@ public class ComparableMain {
         TreeSet<Person> set = new TreeSet<>();
         set.add(new Person(701, "Tom"));
         set.add(new Person(509, "Jack"));
-//        set.add(new Person(847, "Robin"));
-//        set.add(new Person(111, "Peter"));
         System.out.println(set);//[Person{id=701, name=Tom}, Person{PersonId=509, name=Jack}]
         for (Person m: set) {
             System.out.println(m);

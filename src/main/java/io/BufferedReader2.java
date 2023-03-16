@@ -7,7 +7,7 @@ import java.io.IOException;
 
 public class BufferedReader2 {
     public static void main(String[] args) {
-        try (BufferedReader br = new BufferedReader(new FileReader("D:\\Progs\\Pushkin.txt"))){
+        try (BufferedReader br = new BufferedReader(new FileReader("src/main/resources/Pushkin.txt"))){
             while (br.ready()){
                 System.out.println(br.readLine());
             }

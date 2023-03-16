@@ -1,8 +1,6 @@
 package collections.set;
-import collections.Country;
 
 import java.util.EnumSet;
-import java.util.Locale;
 
 public class EnumSetMain {
     public static void main(String[] args) {
@@ -15,6 +13,7 @@ public class EnumSetMain {
         }
         asiaCountries.forEach(c -> c.grow(1));
         System.out.println(Country.ARMENIA.getPopulation());
+        asiaCountries.forEach(System.out::println);
 
     }
 }

@@ -11,11 +11,11 @@ public class QueueMain {
                 this.offer("Jeans");
             }
         };
-        queue.add("dress");//2сп добавление эл-та
+        queue.add("Dress");//2сп добавление эл-та
         queue.offer("T-shirt");
         queue.forEach(System.out::println);//выведет все эл-ты очереди
         queue.remove();//удалит первый элемент FIFO
-        queue.remove("dress");//удалит указанный эл-нт
+        queue.remove("Dress");//удалит указанный эл-нт
         queue.removeIf(s -> s.endsWith("t"));//удаляет эл-ты с указаным окончанием
         queue.clear();//очищает очередь
         System.out.println(queue.peek());//возвращает не удаляя 1й єл-нт, если пусто то null

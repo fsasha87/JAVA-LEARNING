@@ -8,6 +8,7 @@ public class HashMapMain {
         map.put("T-shirt", 7);
         map.put("Jeans", 5);
         map.put("Gloves", 4);
+
         System.out.println(map);//{Gloves=4, T-shirt=7, Jeans=5}
         map.put("Jeans", 4);//замена значения по ключу
         System.out.println(map);//{Gloves=4, T-shirt=7, Jeans=4}

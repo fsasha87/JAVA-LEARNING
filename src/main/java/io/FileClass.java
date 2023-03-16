@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.IOException;
 
 public class FileClass {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         //получаем все файлы и папки по пути
         File dir = new File("D:\\Progs");
         if (dir.isDirectory()) {
@@ -24,11 +24,15 @@ public class FileClass {
         boolean deleted = renamedDir.delete();//удалили папку
         if (deleted) System.out.println("Succesfully deleted");
 //создаем, удаляем файл
-        File newFile = new File("D:\\Progs\\notes.txt");
-        try {newFile.createNewFile();}//создали файл
-        catch (IOException ex) {ex.printStackTrace();}
+        File newFile = new File("src\\main\\resources\\notes.txt");
+        try {
+            newFile.createNewFile();
+        }//создали файл
+        catch (IOException ex) {
+            ex.printStackTrace();
+        }
         if (newFile.exists())
-        System.out.println(newFile.getParent() +"\\"+ newFile.getName());//получили путь и имя файла
+            System.out.println(newFile.getParent() + "\\" + newFile.getName());//получили путь и имя файла
         System.out.println(newFile.length());//кол-во символов в файле
         newFile.delete();//удалили файл
     }
