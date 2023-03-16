@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<company>
+<!--    <name>IT-Heaven</name>-->
+    <offices>
+        <office floor="1" room="1">
+            <employees>
+                <employee name="Maksim" job="Middle Software Developer">some text</employee>
+                <employee name="Ivan" job="Junior Software Developer">text2</employee>
+                <employee name="Franklin" job="Junior Software Developer">textC</employee>
+
+            </employees>
+        </office>
+        <office floor="1" room="2">
+            <employees>
+                <employee name="Herald" job="Middle Software Developer">text4</employee>
+<!--                <employee name="Adam" job="Middle Software Developer">text5</employee>-->
+                <employee name="Adam">text5</employee>
+                <employee name="Leroy" job="Junior Software Developer">text6</employee>
+
+            </employees>
+        </office>
+    </offices>
+</company>
