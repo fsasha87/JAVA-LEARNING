@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>2012 metanit</artifactId>
+    <artifactId>2022_JAVA_LEARNING</artifactId>
     <version>1.0-SNAPSHOT</version>
     <build>
         <plugins>
@@ -78,6 +78,11 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.29</version>
+        </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.4.0</version>
         </dependency>
 
     </dependencies>
