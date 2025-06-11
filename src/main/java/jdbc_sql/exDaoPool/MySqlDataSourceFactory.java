@@ -10,7 +10,7 @@ public class MySqlDataSourceFactory {
 //    static {
 //        dataSource.setURL("jdbc:mysql://localhost:3306/testphones");
 //        dataSource.setUser("root");
-//        dataSource.setPassword("!P@ssw0rd");
+//        dataSource.setPassword("12345");
 //    }
     public static Connection getConnection() throws SQLException {
         return null;

@@ -9,7 +9,7 @@ public class SynchronizeMain2 {
               dog.name = "Boss";
           }
             System.out.println(dog.name+"1");
-        } );
+        } ).start();
         System.out.println(dog.name+"2");
     }
 }

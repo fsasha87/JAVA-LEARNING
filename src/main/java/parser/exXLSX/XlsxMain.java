@@ -11,7 +11,7 @@ import java.util.Arrays;
 
 public class XlsxMain {
     public static void main(String[] args) throws IOException {
-        Workbook workbook = new XSSFWorkbook(new FileInputStream("src/main/java/parser/exXLSX/data2.xlsx"));
+        Workbook workbook = new XSSFWorkbook(new FileInputStream("src/main/java/parser/exXLSX/data3.xlsx"));
         Sheet sheet = workbook.getSheetAt(0);
         int numberOfRows = sheet.getPhysicalNumberOfRows();
         int numberOfColumns = sheet.getRow(0).getLastCellNum();

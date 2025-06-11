@@ -1,0 +1,109 @@
+1-1: i_array - создать, Arrays.sort, Arrays.toString, foreach, fori, while
+1-2: array: найти сумму элементов двумерного массива, вывести 2хмерный массив (foreach, fori, Arrays.deepToString(ar))
+1-3: String/Wrapper: S=>int(s_I_parseInt)=>S(s_S_valueOf); I=>i(i_intValue)=>I(s_I_valueof); S=>by[]=>sout=>newS; S=>toCharArray()=>sout=>newS=>2сп:S_valueOf; S=>chars().mapToObj((char)e)=>sout(e+"-")=>2cп:joining("-"))
+1-4: String=>newSB->append=>insert=>reverse=>newS=>2сп:toString=>S.concat(S)=>S[]_split=>sout=>s_S_join("-",ar)=>S_substring=>toUpperCase; newStringJoiner=>add(S).add(S)=>toString=>sout
+1-5: regex: S_str => p=Pattern.compile("[,:;]") => p.split(str) => sout(ar);
+1-6: regex: sout(Pattern.matches("\\w*", "Thanks!")) => 2сп: (pattern => matcher => sout(m.matches()|m.lookingAt()))
+1-7: regex: pattern("\\b[\\w]{2}\\b")=>matcher(s)=>while(m.find())sout(s.substring(m.start,m.end))=>m.replaceAll("X")
+1-8: конструктор: Woman (name, age)), геттер-сетер-тустринг, showWoman(printf, String.format)
+1-9: Exception: 5/0 => catch(e.printStackTrace/throw e/ throw new ArifmeticException => catch{arifExc} => finally
+1-10: Exception: Scanner => if<10 throw new ArEx(без try)/ throw new Exception(S_message)+catch(e.getMassage)/ throw MyException(C)+констр(super(message);)+тустринг)
+1-11: Сканнер - ввести 2 числа, switch(a|b), if (a>b), ternar z= разница или сложение если а>b
+1-12: enum - Month=i_days+конструкор+геттер+тустринг(+name())+JAN(31), => sout(Jan/name()/ordinal)=>sout(Mon[]_values/Mon_valueOf)
+1-13: inner class: веловипед(S_outname) - поехали, getWheel(wheel.inName); колесо(S_inName) - повернули+S_Outname+getOutName). => B.W w=b.w()
+1-14: static inner class: веловипед(S_outname) - поехали, getWheel(wheel.inName); колесо(S_inName) - повернули+o.S_Outname+o.getOutName).=> B.W w=newB.W()
+1-15: ???локальный класс
+
+2-1: casting: Animal->S_name->Con(name)->v_say->v_move; Cat->Con(name)->@say->v_run; newCat,newAn,newAnCat=>instanceOf
+2-2: Interfaces: Printable(I)+i_SIGNAL+v_print();+d_v_check(){}+s_v_read(){} => Journal(C)+Con(name);=> newJournal/newI+вызов методов/полей
+2-3: anonimous class: AbleToEat(I) => v_eat() => new => override
+2-4: Generic type/класс: Account<T>(C)+T_id => new Account<S/I/F>+sout(getId)
+2-5: Generic method: Printer(C)(v_<T>_print(T_t)) => new Printer.<S,I,F,Cat...>print
+2-6: Object : До/после переопределения: p1(20, "Sasha").equals(p2(20, "Sasha"))=>p1.hashcode()==p2.hashcode() => p1==p2 => p1.getClass.getName
+=> переопределить: hashcode(31*id+name.hashCode(notnull)) =>equals(проверка ссылок+ссылка null+общий класс+числовые поля+строк.поля)
+2-7: Object clone: Person(clonable+@p_O_super.clone()) => p2=(P)p1.clone() => p2.setName + sout(p2)
+2-8: ObjInObj clone: Author(name)+p_A_super.clone => Book(name,author)+clone((B)super.clone();+-(A)this.author.clone())=>(создать-клонировать-изменить-sout) => сравнить ссылочное поле исходного объекта при поверхносном клонировании до/после изменения
+
+3-1: ArrayList: создать arraylist -> add -> sort -> foreach -> list.forEach(->;::) -> L<S>_listIterator() (while (hasNext))
+3-2: set -> Collections.addAll -> set.iterator() -> while (hasNext)
+3-3: HashMap => put => for Map.Entry<k,v> + sout(k+v) -> map.keySet() -> map.values() -> map.entrySet()+sout -> map.entrySet().iterator()
+3-4: Deque => StackLIFO(push+while sout(pop)) => FIFO(offer+sout(poll))
+3-5: comporator: Worker(name,age)=>List+add+sort=>1сп(ан.кл.):newComparator<W>{@O+id/name}); => 2сп:(o1,o2)->o1.get-o2.get)+Comparator.comparing(Worker::getName)
+=>3сп.:вн.ст.кл.impl.Comporator<W>+@compare() => 4сп:comporable<Obj>+@compareTo()
+
+4-1: встр.функц.интерфейсы: Predicate(T->b)/BiPredicate(T,U->b)/UnaryOperator(T->T)/BinaryOperator(T,T->T)/Function(T->R)/BiFunction(T,U->R)/Consumer(T->())/BiConsumer(T,U->())/Supplier(()->T)
+=> Predicate<I>isPositive=x->x>0;sout(isPositive.test(-4)) => BiPredicate<S,I>=(x,y)->x.length()==y;
+=> UnaryOperator<I>=x->x*x; => BinaryOperator<I>=(x,y)->x*y; =>
+=> Function<I,S>=x->String.valueOf(x+"%"); => BiFunction<I,I<D>=(x,y)->Math.pow(x,y);
+=> Consumer<S>=x->sout(x);=>ан.кл.=> BiConsumer<I,S>=(I_x,S_s)->sout(x+s); => Supplier<S>=()->s.toUpperCase();
+4-2: создать функц.инт. ISum с методом sum => реализ.через анон.кл. => 2сп: коротко (а+b) => 3сп: коротко с {return (a + b);};
+4-3: Stream.of: to Object[]/int[]/double[]/List/Set/S_joining/Map(newWoman)
+4-4: Stream: Stream.of+anyMatch(Predicate)=>filter+findFirst()=>reduce(BiOperator(x,y->x+y); => count() => max(->/::compareTo/comparing)
+=> sorted(по возраст./убыв.)+foreach(->/::) =>map(" "+toUpperCase) => skip(n)/limit(n) => flatMap(e->Stream.of(e.split(" ")))
+4-5: ???Collectors.groupingBy/partitioningBy/counting()/summingInt/comparing/summarizingInt
+4-6: Optional: emptyList<I>.min().get() => min().ifPresent => min().OrElse(-1) => min()ifPresentOrElse(v->(),()->())
+
+5-1: I/O: посимвольно: fr+fw/fis+fos => while ((c = fr.read())!=-1) => write,sout(char(c)) => (S_s->by[]->write
+5-2: построчно: br(fr)+bw(fw) => while((s = br.readLine()) != null)=>write+sout
+5-3: br+bw=>br.lines().forEach(list::add/sout::) => write+sout
+5-4: br+ist+system.in => с/в консоль
+5-5: Files.nIS/nOS => by[is.avaible()] => is.read(ar)/os.write(ar) => sout(new String(ar))
+5-6: list -> files.readAllLines(path,UTF-8) -> Files.write -> sout
+5-7: S_Files.readString(path,UTF-8) => sout => writeString
+5-8: Files.lines->filter(startswith)->map(toUpperCase)->sout/newList
+5-9: properties: file my.properties(1=a)=>properties=>fis=>load=>getproperty
+5-10: serialisation: Entity+Serializable+pr_s_f_l_serialVersionUID=1L+transient => oos(fos(some.data))+oos.writeObject(list)
+=> ois(fis)+(T)ois.readObject()+sout
+5-11: Files: create Path => if exist create directory/file=>Path_getFileName
+=> ((String=>by[]=>write)/writeString=>sout(new_S(readAllBytes))=>copy=>delete file/dir=>Files.newDirectoryStream
+5-12: File(устар): create File => if exist mkdir/createNewFile => isFile+length => delete dir/file => sout(dir.listFiles)
+
+6-1: Thread: 1сп: MyThread extends +@run{sout(getName();)} => fori{myThread.start()}
+=> 2сп: new Thread(){@run(){sout}}.start(); => fori
+=> 3сп: new Thread(->sout).start(); => fori
+6-2: Thread: создать нить (sout(thread started); while (!isInterrupted()){sout(counter)+sleep(catch(break))}) => thread.start
+=> sout(MainThread started) => fori{sout(i)+sleep} => прервать нить => sout(thread/main finished)
+6-3: Thread wait: Message(C)=>S_message=> p_sy_S_getter + p_sy_S_setter(+notify)
+=> psvm: message => Thread{sy(message){sout+message.wait()+sout(getter)+sleep+sout(thread.getName)}} => start => main.sleep => setter => join => sout(mainThread)
+
+7-1: ExcelToArray: dependency(poi-ooxml)=>ReadExcel(S_path,S_sheet){new XSSFWorkbook(fis); getSheet}=>
+=>S[][]getData{S[sheet.getPhysicalNumberOfRows][getRow(0).getLastCellNum]+fori{cell=getRow(i).getCell(j)+new DataFormatter().formatCellValue(cell)}
+=>S_getCellValue(i_row,i_col) => main sout(array)
+7-2: ExcelToMap: dependency(poi-ooxml)=>ReadExcel(S_path,S_sheet){new XSSFWorkbook(fis); getSheet}=>
+=>S_getCellData(i_row,i_col){dataFormatter.formatCellValue(sheet.getRow(rowNum).getCell(colNum))}
+=>{S[]_getRowData(i_row){S[totalCol]+fori{getCellData(row,i)}}
+=> HM_dataToMap(i_row){getRowData(0/row)+fori{map.put(ar0[i],arRow[i])}}
+=>sy_HM_dataToMapContains(S_header,S_value){fori{excelDataToMap(i)+if(map.get(header).equals(value))}
+7-3: ObjectToXLS: Person(name,surname,age)=> main: list<Person> => new_WB => createSheet => S[]_headers => sheet.createRow(0)
+=>fori{row.CreateCell(i)+cell.setCellValue(ar[i])} =>for(list){createRow(rowNum++)+row.createCell(0).setCellValue(person.getFirstName());...}
+=> new fos(path) => WB.write(fos);
+
+
+Selenium (project-241102)
+8-1\ pom: org.seleniumhq.selenium_selenium-java; io.github.bonigarcia_webdrivermanager; org.testng_testng
+//psvm: WDM.chromedriver().setup();=>dr=new_ChromeDriver();=>dr.m().w().maximize();=>dr.m().t().iW(D.ofS(5));=>dr.get(url)=>
+//=>dr.findElement(By.xpath("...")).click()/sendKeys();=>new_WebDriverWait(dr,D.ofS(5)).until(ExpConds.elementToBeClickable(By.xpath("...")))
+//=>Assert.assertTrue(dr.findElement(By.xpath("...")).isDisplayed());=>if(dr!=null)dr.quit();
+//PO:1\ BaseTest: WD_dr;=>p_v_initDr(){...}=>@BeforeM_p_v_init(){initDr();dr.get(url)}=>@AfterM_p_v_tear(){...}
+//2\ BasePage: констр(dr){this.dr;PF.initEls(dr,this);new_WDWait(dr,D.ofS(5));}
+//3\ HomePage_extends_BP:констр{super(dr)}=>@FindBy(xpath="")_We_link=>p_HP_click(){link.click();return_this/new_Page(dr)}
+//4\ DP: @Test(dataProvider='dp1', -/dPrClass=DP.class)...=>@DP_p+Obj_[][]{return_new_Object{{'value',},{,}};}
+//5\ data.properties:url=www=>Reader:p_PR(){pr=new_PR;new_FIS("");pr.load(fis)}=>p_S_getUrl(){return_pr.getProperty("url")}
+//6\ pom: io.qameta.allure_allure-testng; <build><plugin>maven-surefire-plugin<dependency>aspectjweaver=>tests: @Description("") => pages: @Step("")
+//7\ log4j+ TestNgListener_impl_ITestListener
+//8\ testng.xml: suite_name='S1'_parallel="classes"_thread-count="4"><test_name<class_name<methods<include_name>>>>>=>
+// =>pom: build<plugin<maven-surefire-plugin<configuration<suiteXmlFile>'..testng.xml'>>>> =>CLI:mvn clean test
+//9\ pom:cucumber-java;cucumber-testng => some.feature: Feature:...Scenario:...Given...When...And...Then...
+//@CucumberOptions(features="src/test/resources/features",glue={"steps"})=>Runner_extends_AbstractTestNGCucumberTests{}
+//StepDefs: @Before_p_v_start(){WDrM.cdr.s;new_CDr...}=>@After{dr.quit()}=>@Given{dr.get(url)}=>@When{homaPage.clickBtn()}
+//10\ xml,json,csv,xlsx,yaml
+
+
+9_1\ //jdbc:mysql-connector-java => DriverManager.getConnection("jdbc:mysql://localhost:3306/db?user=root&password=123")=>
+//=> con.createStatement();=> stat.executeQuery("SELECT..."); => while(rs.next())sout(rs.getInt(1)+rs,getString(2));
+//=> con.prepareStatement("INSERT INTO users(,)VALUES(?,?)")=>ps.setInt(1,10);ps.setString(2,"Tom")=>ps.executeUpdate();
+//jdbc: postgresql =>DriverManager.getConnection("jdbc:postgresql://localhost:5432/...")
+9_2\DAO\ DBManager: p_s_Con_getConnection(){if(null)... return con;}  User:констр+геттеры+сеттеры  Main: new UserDao().register(new User(5, "Tom"));
+//UserDAO: p_i_register(User_u){DBManaget.getCon().prepareSt(SQL);prSt.setString(2,"Tom"); return_prSt.exequteUpdate();}
+
+parser(CSV.Gson,Jackson.Jaxb)

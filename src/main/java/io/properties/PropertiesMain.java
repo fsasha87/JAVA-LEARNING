@@ -20,7 +20,7 @@ public class PropertiesMain {
 //        one=1
 //        two=2
 //        max=100
-        FileInputStream fis = new FileInputStream("my.properties");
+        FileInputStream fis = new FileInputStream("src/main/resources/my.properties");
         prop.load(fis);//загружаем с файла пропертис
         System.out.println(prop.getProperty("max"));//100
         System.out.println(prop.getProperty("bla", "default value"));//default value так как не нашло
@@ -28,7 +28,7 @@ public class PropertiesMain {
         System.out.println(prop.getProperty("1"));//null
 
 //        name=Sasha
-//        surname=Ferens
+//        surname=Ivanow
 //        age=15
         FileInputStream fis2 = new FileInputStream("my2.properties");
         prop.load(fis2);

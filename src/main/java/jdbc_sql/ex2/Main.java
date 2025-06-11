@@ -4,14 +4,14 @@ import java.sql.*;
 
 public class Main {
     public static void main(String[] args) {
-        try (Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/testdb?user=root&password=!P@ssw0rd");
+        try (Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/testdb?user=root&password=12345");
 //        try(Connection connection = DriverManager.getConnection("jdbc:mysql://10.7.0.9:3307/testdb?user=test&password=test");
              Statement statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,
                      ResultSet.CONCUR_UPDATABLE)) {
 
             //CRUD with statement
             statement.executeUpdate("INSERT INTO users VALUES (41, 'Sheva')");
-            statement.executeUpdate("UPDATE users SET login = 'Shevchuk' WHERE id = 41");
+            statement.executeUpdate("UPDATE users SET login = 'Shevchuk' WHERE id = 42");
             statement.executeUpdate("DELETE FROM users WHERE id = 41");
             //create with preparedStatement
             PreparedStatement prestat = connection.prepareStatement("INSERT INTO users (id, login) VALUES (?, ?)");

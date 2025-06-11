@@ -15,7 +15,7 @@ public class AbonentDaoImpl implements AbonentDao{
         Connection connection = null;
         PreparedStatement preparedStatement = null;
         try {
-//            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/testphones?user=root&password=!P@ssw0rd");
+//            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/testphones?user=root&password=12345");
             connection = MySqlDataSourceFactory.getConnection();
             preparedStatement = connection.prepareStatement(SQL_SELECT_ABONENT_BY_LASTNAME);
             preparedStatement.setString(1, patternName);
@@ -45,7 +45,7 @@ public class AbonentDaoImpl implements AbonentDao{
         Connection connection = null;
         Statement statement = null;
         try {
-//            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/testphones?user=root&password=!P@ssw0rd");
+//            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/testphones?user=root&password=12345");
             connection = MySqlDataSourceFactory.getConnection();
             statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery(SQL_SELECT_ALL_ABONENTS);

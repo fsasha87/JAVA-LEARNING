@@ -72,5 +72,6 @@ public class Regex {
         System.out.println(m4.lookingAt());//true
         text4 = m4.replaceAll("lab2");
         System.out.println("\nAfter: " + text4);//After: lab2 lab2 your phone
+
     }
 }

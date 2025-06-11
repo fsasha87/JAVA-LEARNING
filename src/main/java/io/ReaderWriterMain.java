@@ -6,7 +6,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Arrays;
 
-public class FuleReaderWriterMain {
+public class ReaderWriterMain {
     public static void main(String[] args) {
         FileReader fr = null;
         FileWriter fw = null;

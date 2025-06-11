@@ -13,8 +13,8 @@ public class Ex1 {
             }
         }
         catch(Exception ex){
-
             System.out.println(ex.getMessage());
+//            ex.printStackTrace();
         }
         System.out.println("Программа завершена");
     }

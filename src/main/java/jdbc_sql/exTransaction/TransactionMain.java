@@ -7,7 +7,7 @@ import java.sql.Statement;
 
 public class TransactionMain {
     public static void main(String[] args) {
-        try(Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/testdb?user=root&password=!P@ssw0rd");
+        try(Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/testdb?user=root&password=12345");
             Statement statement = connection.createStatement()){
             try {
                 connection.setAutoCommit(false);

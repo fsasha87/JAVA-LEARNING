@@ -17,6 +17,9 @@ public class FuncInterfaces {
         Function<Integer, String> covert = x -> String.valueOf(x + "%");
         System.out.println(covert.apply(5));//5%
 
+        BiFunction<Integer, Integer, Double>  biFunction = (x, y) -> Math.pow(x, y);
+        System.out.println(biFunction.apply(3, 4));//81.0
+
         Consumer<String> printer = x -> System.out.println(x);
         printer.accept("Hi");//Hi
 

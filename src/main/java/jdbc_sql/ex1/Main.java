@@ -8,7 +8,7 @@ public class Main {
 ////        Class.forName("com.mysql.cj.jdbc.Driver");
 //        Connection connection  = DriverManager.getConnection(
 //                "jdbc:mysql://localhost:3306/testdb",
-//                "root", "!P@ssw0rd");
+//                "root", "12345");
 //        Statement statement = connection.createStatement();
 //        ResultSet results = statement.executeQuery("SELECT * FROM users");
 //        while (results.next()) {
@@ -17,7 +17,7 @@ public class Main {
 //            System.out.println(results.getRow() + ". " + id + "\t"+ login);
 //        }
 
-        try(Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/testdb?user=root&password=!P@ssw0rd");
+        try(Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/testdb?user=root&password=12345");
 //        try(Connection connection = DriverManager.getConnection("jdbc:mysql://10.7.0.9:3307/testdb?user=test&password=test");
 
             Statement statement = connection.createStatement()){

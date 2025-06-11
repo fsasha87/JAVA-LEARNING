@@ -2,7 +2,7 @@ package liamdastream.exLiamda;
 
 @FunctionalInterface
 interface ISum {
-    public int sum (int a, int b);
+    int sum (int a, int b);
 }
 
 public class Liamda {

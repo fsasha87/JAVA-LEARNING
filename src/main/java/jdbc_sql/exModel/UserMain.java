@@ -8,7 +8,7 @@ public class UserMain {
     public static void main(String[] args) throws SQLException {
         Connection connection = null;
         try {
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/testdb?user=root&password=!P@ssw0rd");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/testdb?user=root&password=12345");
             User user1 = new User("Petrova");
             addUser(connection, user1);
             System.out.println(addUser(connection, user1));

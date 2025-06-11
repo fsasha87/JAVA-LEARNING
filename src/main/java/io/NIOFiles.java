@@ -32,5 +32,11 @@ public class NIOFiles {
         for (String item : lines) {
             System.out.println(item);
         }
+
+        try (DirectoryStream<Path> files = Files.newDirectoryStream(Paths.get("D:\\Progs"))){
+            for (Path path : files){
+                System.out.println(path);
+            }
+        }
     }
 }

@@ -29,4 +29,6 @@ public class Book implements Cloneable{
         newBook.author=(Author) author.clone();//важно!
         return newBook;
     }
+
+
 }

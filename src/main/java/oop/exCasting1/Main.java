@@ -2,10 +2,10 @@ package oop.exCasting1;
 
 public class Main {
     public static void main(String[] args) {
-        Amimals an1 = new Amimals(" XXX");
-        Cat an2 = new Cat(" Barsik");
-        Amimals an3 = new Cat(" Murka");
-        an1.say();//доступны say move
+        Amimals an1 = new Amimals(" XXX");//доступны sayAn, moveAn
+        Cat an2 = new Cat(" Barsik");//доступны sayCat runcat moveAn
+        Amimals an3 = new Cat(" Murka");//sayCat,moveAn
+        an1.say();//доступны say, move
         an1.move();
         an2.say();//доступны say run move
         an2.move();
